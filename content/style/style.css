@@ -66,10 +66,8 @@ a {
 }
 
 .card {
-    margin: 15px;
+    margin: 0px;
     padding: 15px;
-    border-radius: 25px;
-    border: 10px solid white;
     color: white;
 
     transition: 500ms;
@@ -83,11 +81,25 @@ a {
     padding: 10px;
 }
 
-.card-hoverable:hover {
+.card.card-hoverable:hover {
     background-color: white;
+    color: #424447;
+}
+
+.card-hoverable:hover h2 a {
     color: #424447;
 }
 
 .text-muted {
     opacity: .5;
+}
+
+.area-whole-width {
+    margin-left: -50px;
+    margin-right: -100px;
+    width: calc(100% + 100px);
+}
+
+p > a {
+    text-decoration: underline;
 }

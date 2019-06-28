@@ -91,9 +91,7 @@
     color: white;
 }
 
-.dropdown:hover > a::after {
-    color: black;
-}
+
 
 @media (orientation: portrait) {
     #nav-list {
@@ -175,6 +173,8 @@
 
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+
+        text-align: center;
     }
 
     .dropdown-list li {
@@ -188,5 +188,9 @@
     #nav-list > li.right {
         float: right;
         margin-top: -15px;
+    }
+
+    .dropdown:hover > a::after {
+        color: black;
     }
 }
