@@ -11,7 +11,7 @@
 
 @media (orientation: landscape) {
     #content-container {
-        height: calc(100% - 55px);
+        height: calc(100% - 49px);
     }
 }
 
@@ -67,6 +67,50 @@
 }
 
 .scroll-button:hover {
+    color: var(--main-bg-color);
+    background-color: white;
+}
+
+.top-link::after {
+    content: '\25B2';
+}
+
+.sidebar {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    top: 30%;
+}
+
+.sidebar-right {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.sidebar-left {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.sidebar ul li {
+    padding: 15px 5px;
+}
+
+.sidebar ul li a {
+    padding: 10px;
+    border-radius: 5px;
+    transition: 500ms;
+}
+
+.sidebar ul li a:hover {
     color: var(--main-bg-color);
     background-color: white;
 }
