@@ -1,3 +1,7 @@
+:root {
+    --nav-bg-color: #0046b8;
+}
+
 #nav-toggle {
     display: none;
 }
@@ -19,7 +23,7 @@
 }
 
 #nav-toggle-label span {
-    background-color: black;
+    background-color: var(--nav-bg-color);
     width: 30px;
     height: 5px;
 
@@ -40,7 +44,7 @@
 }
 
 #nav-toggle-label:hover {
-    background-color: black;
+    background-color: var(--nav-bg-color);
 }
 
 #nav-toggle-label:hover span {
@@ -61,7 +65,7 @@
 
     visibility: hidden;
 
-    background-color: black;
+    background-color: var(--nav-bg-color);
     color: white;
 }
 
@@ -83,7 +87,7 @@
 }
 
 #nav-toggle:checked ~ #nav-toggle-label:hover span {
-    background-color: black;
+    background-color: var(--nav-bg-color);
 }
 
 .dropdown > a::after {
@@ -105,7 +109,7 @@
     
     #nav-list li:hover {
         background-color: white;
-        color: black;
+        color: var(--nav-bg-color);
     }
     
     #nav-list li.dropdown ul {
@@ -121,7 +125,7 @@
     }
     
     #nav-list li a:hover {
-        background-color: black;
+        background-color: var(--nav-bg-color);
         border-radius: 15px;
         color: white;
     }
@@ -150,7 +154,7 @@
     }
 
     #nav-list > li:hover > a {
-        color: black;
+        color: var(--nav-bg-color);
     }
 
     #nav-list li.dropdown {
@@ -167,7 +171,7 @@
 
         visibility: hidden;
 
-        background-color: black;
+        background-color: var(--nav-bg-color);
 
         padding: 15px;
 
@@ -191,6 +195,6 @@
     }
 
     .dropdown:hover > a::after {
-        color: black;
+        color: var(--nav-bg-color);
     }
 }
