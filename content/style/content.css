@@ -1,0 +1,71 @@
+#content-container {
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media (orientation: landscape) {
+    #content-container {
+        height: calc(100% - 55px);
+    }
+}
+
+#content-container h1 {
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+}
+
+#content-container h2 {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+}
+
+.title-full {
+    padding: 10% 0;
+}
+
+#content-container.home {
+    background: url('/content/cgi-bin/main-background.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+#footer {
+    background-color: #424447;
+    color: white;
+    margin-top: 50px;
+    padding: 15px 30px;
+}
+
+.scroll-button-container {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+
+.scroll-button-container p {
+    text-align: center;
+}
+
+.scroll-button {
+    font-size: 36px;
+    padding: 10px 21px;
+    border-radius: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+    transition: 500ms all;
+}
+
+.scroll-button::after {
+    content: '\25BC';
+}
+
+.scroll-button:hover {
+    color: black;
+    background-color: white;
+}
