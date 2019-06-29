@@ -33,7 +33,7 @@
 }
 
 #content-container.home {
-    background: url('/content/cgi-bin/main-background.jpg') no-repeat fixed center;
+    background: url('../cgi-bin/main-background.jpg') no-repeat fixed center;
     background-size: cover;
 }
 
