@@ -20,6 +20,8 @@
     transition: 500ms;
 
     cursor: pointer;
+
+    background-color: white;
 }
 
 #nav-toggle-label span {
