@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
 
+/*=========================SCROLLING=========================*/
 * {
 	scroll-behavior: smooth;
 }
@@ -10,6 +11,7 @@
 	}
 }
 
+/*=========================GENERAL SIZING=========================*/
 html, body {
     padding: 0;
     margin: 0;
@@ -22,6 +24,24 @@ html, body {
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --main-bg-color: #0046b8;
+}
+
+#content-container {
+    overflow: auto;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media (orientation: landscape) {
+    #content-container {
+        height: calc(100% - 49px);
+    }
+}
+
+/*=========================TEXT=========================*/
 a {
     color: inherit;
     text-decoration: none;
@@ -31,22 +51,14 @@ p > a {
     text-decoration: underline;
 }
 
-.area {
-    background-color: #424447;
-    width: calc(100% - 300px);
-    height: auto;
-    padding: 50px 150px;
-    color: white;
-
-    font-size: 24px;
-
-    margin-top: 50px;
+.text-muted {
+    opacity: .5;
 }
 
+/*=========================GRID DISPLAY=========================*/
 [class*="col-"] {
     float: left;
     width: 100%;
-    height: auto;
 }
 
 @media (orientation: landscape) {
@@ -62,11 +74,19 @@ p > a {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
 
-.row {
-    width: 100%;
-    height: auto;
+    .row {
+        width: 100%;
+        height: auto;
+    
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
 .row::after {
