@@ -55,6 +55,10 @@ p > a {
     opacity: .5;
 }
 
+.center {
+    text-align: center;
+}
+
 /*=========================GRID DISPLAY=========================*/
 [class*="col-"] {
     float: left;

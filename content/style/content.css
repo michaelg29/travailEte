@@ -16,6 +16,11 @@
     padding: 10% 0;
 }
 
+.title-full h2 {
+    font-size: 36px;
+    opacity: .9;
+}
+
 #content-container.home {
     background: url('../cgi-bin/main-background.jpg') no-repeat fixed center;
     background-size: cover;
@@ -119,10 +124,6 @@ p.sec-content {
 .img-link {
     font-style: italic;
     opacity: .5;
-}
-
-p.center {
-    text-align: center;
 }
 
 .sec-img-container {
