@@ -22,7 +22,7 @@
     font-weight: 800;
 }
 
-#content-container h2 {
+#content-container > h2 {
     color: white;
     font-size: 64px;
     text-align: center;
@@ -102,7 +102,7 @@
 }
 
 .sidebar ul li {
-    padding: 15px 5px;
+    padding: 24px 0;
 }
 
 .sidebar ul li a {
@@ -114,4 +114,89 @@
 .sidebar ul li a:hover {
     color: var(--main-bg-color);
     background-color: white;
+}
+
+.sec-title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: left;
+}
+
+.sec-img-container {
+    padding: 0;
+    margin: 0;
+}
+
+p.sec-content {
+    text-align: justify;
+    margin: 0;
+    padding: 15px 30px;
+}
+
+.img-link {
+    font-style: italic;
+    opacity: .5;
+}
+
+p.center {
+    text-align: center;
+}
+
+.sec-img-container {
+    width: 100%;
+}
+
+p.p-img {
+    padding: 5% 15px;
+}
+
+p.sec-content {
+    margin: 0;
+    padding: 15px;
+}
+
+img.sec-img {
+    max-width: 100%;
+    max-height: 100%;
+
+    vertical-align: middle;
+}
+
+.card {
+    margin: 0px;
+    padding: 15px;
+    color: white;
+
+    transition: 500ms;
+}
+
+.card .card-title {
+    text-align: center;
+}
+
+.card .card-desc {
+    padding: 10px;
+}
+
+.card.card-hoverable:hover {
+    background-color: white;
+    color: #424447;
+}
+
+.card-hoverable:hover h2 a {
+    color: #424447;
+}
+
+.text-muted {
+    opacity: .5;
+}
+
+.area-whole-width {
+    margin-left: -50px;
+    margin-right: -100px;
+    width: calc(100% + 100px);
+}
+
+.area > h2 {
+    font-size: 48px;
 }

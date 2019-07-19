@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+p > a {
+    text-decoration: underline;
+}
+
 .area {
     background-color: #424447;
     width: calc(100% - 300px);
@@ -42,6 +46,7 @@ a {
 [class*="col-"] {
     float: left;
     width: 100%;
+    height: auto;
 }
 
 @media (orientation: landscape) {
@@ -59,47 +64,13 @@ a {
     .col-12 {width: 100%;}
 }
 
+.row {
+    width: 100%;
+    height: auto;
+}
+
 .row::after {
     content: "";
     clear: both;
     display: table;
-}
-
-.card {
-    margin: 0px;
-    padding: 15px;
-    color: white;
-
-    transition: 500ms;
-}
-
-.card .card-title {
-    text-align: center;
-}
-
-.card .card-desc {
-    padding: 10px;
-}
-
-.card.card-hoverable:hover {
-    background-color: white;
-    color: #424447;
-}
-
-.card-hoverable:hover h2 a {
-    color: #424447;
-}
-
-.text-muted {
-    opacity: .5;
-}
-
-.area-whole-width {
-    margin-left: -50px;
-    margin-right: -100px;
-    width: calc(100% + 100px);
-}
-
-p > a {
-    text-decoration: underline;
 }
