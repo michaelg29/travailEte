@@ -72,6 +72,7 @@
     position: absolute;
     top: 30%;
     box-shadow: 3px 10px 8px 1px rgba(0,0,0,0.75);
+    display: none;
 }
 
 .sidebar-right {
@@ -106,6 +107,12 @@
 .sidebar ul li a:hover {
     color: var(--main-bg-color);
     background-color: white;
+}
+
+@media (orientation: landscape) {
+    .sidebar {
+        display: inherit;
+    }
 }
 
 /*=========================SUBSECTIONS OF AREAS=========================*/
@@ -174,9 +181,9 @@ img.sec-img {
 /*=========================AREAS=========================*/
 .area {
     background-color: rgb(66, 68, 71, .9);
-    width: calc(100% - 300px);
+    width: 100%;
     height: auto;
-    padding: 50px 150px;
+    padding: 25px 0px;
     color: white;
 
     font-size: 24px;
@@ -190,6 +197,22 @@ img.sec-img {
     width: calc(100% + 100px);
 }
 
+.area h1, .area h2, .area h3, .area h4, .area h5, .area h6, .area > p {
+    padding: 0 15px;
+}
+
 .area > h2 {
     font-size: 48px;
+}
+
+.area > h3 {
+    padding: 0 15px;
+    text-align: center;
+}
+
+@media (orientation: landscape) {
+    .area {
+        padding: 50px 150px;
+        width: calc(100% - 300px);
+    }
 }
